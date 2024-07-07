@@ -7,6 +7,7 @@ import com.harshEM.EM.project.Employee;
 import com.harshEM.EM.project.service.EmployeeService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 // import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +18,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 
 
 
-
+@CrossOrigin
 @RestController
 public class EMcontroller {
 
