@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jdk-alpine
-VOLUME /tmp
-COPY target/EM-project-0.0.1-SNAPSHOT.jar EM-project.jar
+FROM openjdk:17-jdk-alpine
+EXPOSE 8080
+ADD target/emproject-0.0.1-SNAPSHOT.jar emproject.jar
 ENTRYPOINT ["java","-jar","/EM-project.jar"]
